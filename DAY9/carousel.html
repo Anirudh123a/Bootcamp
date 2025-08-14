@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #container{
+        background-image:url("asset/Berserk\ Wallpaper\ QHD\ _\ Sfondo\ bianco\ e\ nero\ iphone\ Arte\ dei\ fumetti\ Sfondi\ per\ cellulare.jpg");
+        height: 100vh;
+        width:100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .mini img{
+        width: 150px;
+                height: 10%;
+
+    }
+     .mini{
+        display: flex;
+        position: absolute;
+        bottom: 40px;
+        right: 10px;
+        
+     }
+     .arrow{
+        background-color: transparent;
+     }
+   #a1{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50px;
+    width: 100px;
+   }
+       #a2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50px;
+    width: 100px;
+    rotate:y 180deg  ;
+   }
+     
+
+    
+
+</style>    
+<body>
+    <div id="container">
+        <div class="mini">
+      <img src="asset/one-piece-luffy-gear-5-3840x2160-10747.jpg" alt="">
+      <img src="asset/Pin de Antonio Pizzo em Spiderman em 2025 _ Imagem de fundo de computador Papel de parede do notebook Ideias de papel de parede.jpg" alt="">
+      <img src="asset/tanjiro-kamado-red-5120x2880-22577.png" alt="">
+      <img src="asset/Van Gogh Starry Night Wallpaper.jpg" alt="">
+      </div>
+      <div class="arrow">
+        <img id="a1" onclick="changeimg()" src="asset/Download Dash Arrow PNG Icon - Black Sticker _ Free Image.jpg" alt="">
+             <img id="a2" onclick="previmg()" src="asset/Download Dash Arrow PNG Icon - Black Sticker _ Free Image.jpg" alt="">
+
+    </div>
+    </div>
+    <script src="./change.js"></script>
+</body>
+</html>

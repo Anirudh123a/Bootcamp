@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rockstar Games</title>
+  <link rel="icon" type="image/x-icon" href="https://www.rockstargames.com/favicon.ico" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    /* Header with fixed nav and logo */
+    header {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #facc15;
+      text-shadow: 0 0 8px #fff;
+    }
+
+    .spacer {
+      height: 80px; /* adjust if needed */
+    }
+
+    /* Hero */
+    .hero {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+
+    /* Section title */
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    /* Featured games */
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 40px 40px;
+    }
+
+    .games img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .games img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #999;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with logo and nav -->
+  <header>
+    <div class="logo">
+      <a href="https://www.rockstargames.com/">
+        <img src="asset/download.png" alt="Rockstar Logo" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://www.rockstargames.com/">Home</a></li>
+        <li><a href="https://www.rockstargames.com/games">Games</a></li>
+        <li><a href="https://www.rockstargames.com/news">News</a></li>
+        <li><a href="https://www.rockstargames.com/downloads">Downloads</a></li>
+        <li><a href="https://www.rockstargames.com/support">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Spacer to offset fixed nav -->
+  <div class="spacer"></div>
+
+  <!-- Hero Image -->
+  <img src="asset/wallpaperflare.com_wallpaper.jpg" alt="Rockstar Wallpaper" class="hero" />
+
+  <!-- Featured Games Section -->
+  <h1>Featured Games</h1>
+  <div class="games">
+    <img src="asset/gta v.jpg" alt="Grand Theft Auto V" />
+    <img src="asset/rdr 2.jpg" alt="Red Dead Redemption 2" />
+    <img src="asset/max payne 3.jpg" alt="Max Payne 3" />
+    <img src="asset/bully.jpg" alt="Bully" />
+    <img src="asset/gta triology.jpg" alt="Gta triology" />
+    <img src="asset/man hunt 2.jpg" alt="Manhunt 2" />
+
+  </div>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <p>&copy; 2025 Rockstar Clone. All rights reserved.</p>
+  </footer> -->
+  <!-- Footer -->
+<footer style="background-color:#000; color:#ccc; padding:60px 40px 20px; font-family:Arial, sans-serif;">
+  <div style="text-align:center; max-width:800px; margin:auto;">
+    <img src="https://www.rockstargames.com/favicon.ico" alt="R*" style="width:40px; margin-bottom:10px;" />
+    <h2 style="color:#fff; font-size:24px; margin-bottom:10px;">Subscribe to the Rockstar Games Email List</h2>
+    <p style="font-size:14px; margin-bottom:20px;">Sign up for our email newsletter to get info on game announcements and updates, details on special events and offers, and more from Rockstar Games and our affiliates.</p>
+    <button style="padding:10px 25px; background-color:transparent; border:1px solid #ccc; color:#fff; border-radius:25px; cursor:pointer;">Subscribe Now</button>
+  </div>
+
+  <hr style="margin:40px auto; border:0; border-top:1px solid #444; width:80%;" />
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; font-size:14px; margin-bottom:30px;">
+    <a href="#" style="color:#fff; text-decoration:none;">Contact</a>
+    <a href="#" style="color:#fff; text-decoration:none;">Careers</a>
+    <a href="#" style="color:#fff; text-decoration:none;">Community Resources</a>
+    <a href="#" style="color:#fff; text-decoration:none;">Subscribe</a>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; font-size:12px; margin-bottom:30px;">
+    <a href="#" style="color:#aaa; text-decoration:none;">Corporate</a>
+    <a href="#" style="color:#aaa; text-decoration:none;">Privacy</a>
+    <a href="#" style="color:#aaa; text-decoration:none;">Cookie Settings</a>
+    <a href="#" style="color:#aaa; text-decoration:none;">Cookie Policy</a>
+    <a href="#" style="color:#aaa; text-decoration:none;">Legal</a>
+    <a href="#" style="color:#aaa; text-decoration:none;">Do Not Sell or Share My Personal Information</a>
+  </div>
+
+  <div style="text-align:center; margin-bottom:30px;">
+    <select style="background:#000; color:#fff; border:1px solid #444; padding:5px 10px;">
+      <option selected>🌐 English</option>
+      <option>Español</option>
+      <option>Français</option>
+    </select>
+  </div>
+
+  <div style="text-align:center; margin-bottom:20px;">
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20" style="margin: 0 10px;"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="20" style="margin: 0 10px;"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="20" style="margin: 0 10px;"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20" style="margin: 0 10px;"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" width="20" style="margin: 0 10px;"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384071.png" width="20" style="margin: 0 10px;"></a>
+  </div>
+
+  <div style="text-align:center; font-size:13px;">
+    <p>Rockstar Games</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

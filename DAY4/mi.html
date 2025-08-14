@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi</title>
+    <link rel="icon" href="https://www.mi.com/favicon.ico" type="image/x-icon">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 30px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .left-menu, .right-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+        }
+        .left-menu img {
+            height: 30px;
+        }
+        li {
+            cursor: pointer;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+        li:hover {
+            color: #ff6700;
+        }
+
+        /* Hero Image */
+        .hero img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Product Categories */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+        }
+        .card {
+            width: 180px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #555;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        /* Offerings */
+        .offerings h3, .newlaunches h3 {
+            font-size: 35px;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        .offercard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+        .card1 {
+            background: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+            transition: 0.3s;
+        }
+        .card1 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card1 p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #555;
+        }
+        .card1:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        /* New Launches */
+        .newlaunchcard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+        .card2 {
+            background: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            width: 280px;
+            transition: 0.3s;
+        }
+        .card2 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card2 h4 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .price-new {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6700;
+        }
+        .price-old {
+            font-size: 16px;
+            text-decoration: line-through;
+            color: #888;
+        }
+        .card2:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        /* Footer */
+        footer {
+            background: #191919;
+            color: #ccc;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+        .footer-column {
+            max-width: 200px;
+        }
+        .footer-column h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #fff;
+        }
+        .footer-column ul {
+            list-style: none;
+        }
+        .footer-column ul li {
+            margin: 8px 0;
+            font-size: 14px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .footer-column ul li:hover {
+            color: #ff6700;
+        }
+        .footer-bottom {
+            text-align: center;
+            font-size: 13px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .container, .offercard, .newlaunchcard {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <ul class="left-menu">
+        <img src="https://www.mi.com/favicon.ico" alt="Xiaomi Logo">
+        <li>Store</li>
+        <li>Phone</li>
+        <li>Tablets</li>
+        <li>TV & Smart Home</li>
+        <li>Smart Watch & Audio</li>
+    </ul>
+    <ul class="right-menu">
+        <li>Discover</li>
+        <li>Support</li>
+        <li>Search</li>
+        <li>Sign up</li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+    <img src="asset/image.png" alt="Xiaomi Banner">
+</div>
+
+<!-- Product Categories -->
+<div class="container">
+    <!-- Repeated Cards -->
+    <div class="card"><img src="https://i03.appmifile.com/586_operator_in/27/05/2025/5381642f8863692241876d9a10b76a88.png" alt=""><p>Phone</p></div>
+    <div class="card"><img src="https://i03.appmifile.com/11_operator_in/27/05/2025/bd96981e1a6232de39d0d0121d691741.png" alt=""><p>Smart TV</p></div>
+    <div class="card"><img src="https://i03.appmifile.com/511_operator_in/27/05/2025/dfa93b41670758e1d361df0ad6789d4f.png" alt=""><p>Tablet</p></div>
+    <div class="card"><img src="https://i02.appmifile.com/981_operatorx_operatorx_xm/02/09/2024/d86f0e4fe16fc98d851f15edbbae5abd.png" alt=""><p>Smartwatch</p></div>
+    <div class="card"><img src="https://i03.appmifile.com/592_operator_in/27/05/2025/934d7cc3d66468b3ae0651b0fc36ed0d.png" alt=""><p>Buds & Speaker</p></div>
+    <div class="card"><img src="https://i03.appmifile.com/293_operator_in/27/05/2025/3954521265e1c90290e85102c6e7ca40.png" alt=""><p>Accessories</p></div>
+    <div class="card"><img src="https://i03.appmifile.com/154_operator_in/27/05/2025/44a2a071d52180de76368085d6659bb0.png" alt=""><p>Bundles</p></div>
+    <div class="card"><img src="https://i03.appmifile.com/325_operator_in/27/05/2025/1382c5f584a6e993b55ebe182217bbf5.png" alt=""><p>Rewards Club</p></div>
+</div>
+
+<!-- Offerings -->
+<div class="offerings">
+    <h3>Xiaomi Exclusive Offerings</h3>
+</div>
+<div class="offercard">
+    <div class="card1"><img src="https://i02.appmifile.com/38_operatorx_operatorx_xm/27/11/2024/f7184560e02644c9c4cf5d23b0618c6c.png" alt=""><p>Exclusive Bundles</p></div>
+    <div class="card1"><img src="https://i03.appmifile.com/823_operator_in/16/06/2025/e5ae94971baf9c77036f348a6afea1e3.jpg" alt=""><p>Special Rewards</p></div>
+    <div class="card1"><img src="https://i02.appmifile.com/500_operatorx_operatorx_xm/27/11/2024/9ea7b5fd29f11b0100e9a0b6d3eeebe8.png" alt=""><p>Get the Xiaomi App</p></div>
+</div>
+
+<!-- New Launches -->
+<div class="newlaunches">
+    <h3>New Launches ></h3>
+    <div class="newlaunchcard">
+        <div class="card2"><h4>Xiaomi QLED TV X Pro 2025 Edition</h4><img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-smart-tv-f-pro-55-2025/PC/21110185190be73b5f624451e700a548.png" alt=""><div class="price"><span class="price-new">₹30,999</span><span class="price-old">₹49,999</span></div></div>
+        <div class="card2"><h4>Xiaomi QLED TV X Pro 2025 Edition</h4><img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-smart-tv-f-pro-55-2025/PC/21110185190be73b5f624451e700a548.png" alt=""><div class="price"><span class="price-new">₹30,999</span><span class="price-old">₹49,999</span></div></div>
+        <div class="card2"><h4>Xiaomi QLED TV X Pro 2025 Edition</h4><img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-smart-tv-f-pro-55-2025/PC/21110185190be73b5f624451e700a548.png" alt=""><div class="price"><span class="price-new">₹30,999</span><span class="price-old">₹49,999</span></div></div>
+        <div class="card2"><h4>Xiaomi QLED TV X Pro 2025 Edition</h4><img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-smart-tv-f-pro-55-2025/PC/21110185190be73b5f624451e700a548.png" alt=""><div class="price"><span class="price-new">₹30,999</span><span class="price-old">₹49,999</span></div></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Products</h4>
+            <ul>
+                <li>Phones</li>
+                <li>Smart TV</li>
+                <li>Tablets</li>
+                <li>Wearables</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+                <li>Help Center</li>
+                <li>Warranty</li>
+                <li>Contact Us</li>
+                <li>Service Centers</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>About</h4>
+            <ul>
+                <li>Company Info</li>
+                <li>Careers</li>
+                <li>Investor Relations</li>
+                <li>Press</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 Xiaomi India. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
