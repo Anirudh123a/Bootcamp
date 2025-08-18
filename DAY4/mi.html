@@ -45,11 +45,70 @@
             color: #ff6700;
         }
 
-        /* Hero Image */
+        /* Hero Image
         .hero img {
             width: 100%;
             display: block;
-        }
+        } */ /* Carousel */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 400px;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%;
+      height: 100%;
+    }
+    .carousel-slide {
+      flex: 1 0 100%;
+      height: 100%;
+    }
+    .carousel-slide img {
+      height: 90%;
+      width: 40%;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      color: white;
+      background: rgba(0, 0, 0, 0.3);
+      border: none;
+      cursor: pointer;
+      padding: 5px 15px;
+      z-index: 10;
+    }
+    .prev-btn {
+      left: 10px;
+    }
+    .next-btn {
+      right: 10px;
+    }
+
+    .carousel-dots {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+    .carousel-dots button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: none;
+      background: #ddd;
+      cursor: pointer;
+    }
+    .carousel-dots button.active {
+      background: #ff6700;
+    }
+
 
         /* Product Categories */
         .container {
@@ -230,13 +289,28 @@
         <li>Discover</li>
         <li>Support</li>
         <li>Search</li>
-        <li>Sign up</li>
+        <li ><a href="login.html" style="text-decoration: none; color: black;">Sign up</a></li>
     </ul>
 </nav>
 
-<!-- Hero -->
+<!-- Hero
 <div class="hero">
     <img src="asset/image.png" alt="Xiaomi Banner">
+</div> -->
+<!-- Hero Carousel -->
+<div class="hero">
+  <div class="carousel-track" id="carouselTrack">
+    <div class="carousel-slide"><img src="asset/image.png" alt=""></div>
+    <div class="carousel-slide"><img src="asset/mi 2.png" alt=""></div>
+    <div class="carousel-slide"><img src="asset/mi1.webp" alt=""></div>
+  </div>
+  <button class="carousel-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+  <button class="carousel-btn next-btn" onclick="nextSlide()">&#10095;</button>
+  <div class="carousel-dots">
+    <button id="dot0" class="active" onclick="goToSlide(0)"></button>
+    <button id="dot1" onclick="goToSlide(1)"></button>
+    <button id="dot2" onclick="goToSlide(2)"></button>
+  </div>
 </div>
 
 <!-- Product Categories -->
@@ -317,6 +391,7 @@
         © 2025 Xiaomi India. All rights reserved.
     </div>
 </footer>
+<script src="miscript.js"></script>
 
 </body>
 </html>

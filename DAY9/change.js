@@ -9,7 +9,7 @@
 
     ];
     let i=0;
-    let changeimg=()=>{
+    let nextimg=()=>{
            i++;
         if(i==5){
             i=0
@@ -25,5 +25,5 @@
             i=4;
         }
           con.style.backgroundImage=`url('${arr[i]}')`;
-    }
-    setInterval(changeimg, 3000);
+     }
+    // setInterval(changeimg, 3000);

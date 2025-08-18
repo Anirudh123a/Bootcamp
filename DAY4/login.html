@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xiaomi Login</title>
+  <link rel="icon" href="https://www.mi.com/favicon.ico" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background: black;
+      color: #fff;
+    }
+
+    .left-side {
+      flex: 1;
+      background: url('/BOOTCAMP/DAY4/asset/login.png') no-repeat center;
+      background-size: cover;
+    }
+
+    .right-side {
+      width: 400px;
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: #2a2a2a;
+      padding: 40px 30px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 330px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      border-bottom: 2px solid orange;
+      display: inline-block;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background: #444;
+      border: none;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff6700;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .google-login {
+      background-color: #4285F4;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .google-login img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .options a {
+      color: #ff6700;
+      text-decoration: none;
+    }
+
+    .more-options {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .facebook-icon {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #1877f2;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-side"></div>
+  <div class="right-side">
+    <div class="login-box">
+      <h2>Sign in</h2>
+      <input type="text" placeholder="Email/Phone/Xiaomi Account" />
+      <input type="password" placeholder="Password" />
+      <button>Sign in</button>
+      <button class="google-login">
+        <img src="https://img.icons8.com/color/48/google-logo.png" alt="G"/> Sign in with Google
+      </button>
+      <div class="options">
+        <a href="#">Forgot password?</a>
+        <a href="#">Sign in using phone</a>
+      </div>
+      
+    </div>
+  </div>
+  <footer>© 2025 Xiaomi Inc., All rights reserved.</footer>
+</body>
+</html>
